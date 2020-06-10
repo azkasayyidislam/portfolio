@@ -1,5 +1,9 @@
+body {
+    margin-top: 40px;
+}
+
 section {
-    min-height: 400px;
+    min-height: 600px;
 }
 
 
