@@ -3,14 +3,23 @@ body {
 }
 
 section {
-    min-height: 600px;
+    min-height: 540px;
 }
 
-
+.jumbotron {
+    height: 450px;
+    background-image: url(./img/header-bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: cornsilk;
+    background-attachment: fixed;
+    overflow: hidden;
+}
 
 .jumbotron img {
     border-radius: 100%;
-    border: 4px solid #000000;
+    border: 4px solid cornsilk;
 }
 
 .about hr {
@@ -18,6 +27,39 @@ section {
     border-top: 4px solid #000000;
     border-radius: 20%;
 }
+
+.pkiri,
+.pkanan {
+    opacity: 0;
+    transform: translate(-50px, 0);
+    transform: rotate(15deg);
+
+}
+
+.pkanan {
+    transform: translate(50px, 0);
+    transform: rotate(-15deg);
+}
+
+.pkanan.pmuncul,
+.pkiri.pmuncul {
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: 1.5s;
+}
+
+.photos .img-thumbnail {
+
+    opacity: 0;
+    transform: translate(0, -50px);
+}
+
+.photos .img-thumbnail.muncul {
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: 0.3s ease-in;
+}
+
 
 .contact hr {
     width: 20%;
